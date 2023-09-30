@@ -62,8 +62,13 @@ $pizzas = $pizzaDAO->findAll();
             <div class="text p-4">
                 <h3><?php echo $pizza->TipoDaPizza; ?></h3>
                 <p><?php echo $pizza->Descricao; ?></p>
-                <p class="price"><span>$<?php echo $pizza->Valor; ?></span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-            </div>
+                <p class="price"><span>$<?php echo $pizza->Valor; ?></span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Adionar</a></p>
+				<div class="m-1">
+				<a href="#" class="ml-2 btn btn-white btn-outline-white" style="background:blue;">Editar</a> <a href="#" class="ml-2 btn btn-white btn-outline-white" style="background:red;">Excluir</a></p>
+				</div>
+				
+
+			</div>
         </div>
     </div>
     <?php
